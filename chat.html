@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Jesus Chat</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="messages" id="messages"></div>
+
+    <div class="input-area">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Schreibe eine Nachricht..."
+        onkeyup="if(event.key === 'Enter') sendMessage()"
+      />
+      <button onclick="sendMessage()">Senden</button>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
