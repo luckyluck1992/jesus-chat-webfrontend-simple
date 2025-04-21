@@ -32,7 +32,7 @@ function sendMessage() {
   renderMessages();
 
   // Anfrage ans Backend
-  fetch('http://localhost:9898/message', {
+  fetch('https://investigate-affecting-instructions-log.trycloudflare.com/message', {
     method: 'POST',
     body: text
   })
