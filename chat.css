@@ -7,12 +7,28 @@ html, body {
   font-family: sans-serif;
 }
 
-/* Container für den gesamten Chat */
+/* Hintergrundbild */
+body {
+  background-image: url('jesus-horizontal.png');
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+}
+
+@media (orientation: portrait) {
+  .chat-container {
+    background-image: url("portrait-jesus-doing-contemporary-things-modern-world.jpg");
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+/* Halbtransparenter Container für bessere Lesbarkeit */
 .chat-container {
   display: flex;
   flex-direction: column;
   height: 100dvh;
-  background-color: #fdfcf9;
+  background-color: rgba(253, 252, 249, 0.2); /* leicht transparent */
 }
 
 /* Nachrichtenbereich */
@@ -23,7 +39,6 @@ html, body {
   padding: 1rem;
 }
 
-/* Nutzer- und Jesus-Nachrichten */
 .messages .user {
   text-align: right;
   margin: 0.5rem 0;
@@ -93,4 +108,23 @@ html, body {
   0% { opacity: 0.6; }
   50% { opacity: 1; }
   100% { opacity: 0.6; }
+}
+
+/* Responsive Optimierung */
+@media (max-width: 600px) {
+  .input-area {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .input-area input,
+  .input-area button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .messages span {
+    font-size: 1.1rem;
+  }
 }
