@@ -32,7 +32,7 @@ function sendMessage() {
   renderMessages();
 
   // Anfrage ans Backend
-  fetch('https://foto-ice-finishing-hardcover.trycloudflare.com/message', {
+  fetch('https://arrival-disclosure-cop-pads.trycloudflare.com/message', {
     method: 'POST',
     body: text
   })
