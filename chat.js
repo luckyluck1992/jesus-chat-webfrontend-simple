@@ -48,7 +48,8 @@ function sendMessage() {
     })
     .catch(error => {
       console.error(error);
-      messages[placeholderIndex] = { sender: 'jesus', text: 'Es gab ein Problem mit der Antwort.' };
+      messages[placeholderIndex] = { sender: 'jesus', text: "Jesus ist zur zeit leider nicht verfügbar. Er wird woanders gebraucht, um Frieden und Freude für die Menschen zu schaffen! " +
+                                "Call Jesus later Bro!" };
       renderMessages();
     });
 }
